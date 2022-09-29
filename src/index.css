@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Inter');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -49,6 +48,8 @@ body {
 }
 
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
