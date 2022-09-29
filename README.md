@@ -2,6 +2,10 @@
 
 This is my personal website. My website is built with React and TailwindCSS. It is deployed using Netlify.
 
+# Want to contribute?
+
+Contributions are welcome! If you'd like to find issues or solve issues that is great!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
