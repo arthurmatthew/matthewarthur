@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Welcome from "./components/Welcome/Welcome";
 import Toggle from "./components/Toggle/Toggle";
 import About from "./components/About/About";
-import ImportantProjects from "./components/Projects/ImportantProjects/ImportantProjects";
 import Footer from "./components/Footer/Footer";
 // import Contact from './components/Contact/Contact';
 
@@ -32,7 +31,9 @@ function App() {
             <Toggle toggle={toggleTheme} dark={dark} />
             <Welcome />
             <About dark={dark} />
-            <ImportantProjects />
+            <div id="projects" className="w-full p-16 flex justify-center items-center dark:bg-stone-800 bg-stone-100">
+                <p className="bg-white p-6 rounded-md">It is quite empty here. Usually, this would showcase projects. However, that section is being revamped. Check back soon.</p>
+            </div>
             {/* <Contact/> */}
             <Footer>
                 Made by Matthew Arthur using React and TailwindCSS
