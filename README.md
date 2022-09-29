@@ -1,6 +1,6 @@
 # About This Project
 
-This is my personal website. My website is built with React and TailwindCSS. 
+This is my personal website. My website is built with React and TailwindCSS. It is deployed using Netlify.
 
 # Getting Started with Create React App
 
