@@ -17,7 +17,7 @@ function Welcome(props) {
             <div className="flex justify-center min-w-fit h-96 flex-col gap-3 p-10">
                 <WelcomeTitle>
                     Hi, I'm&nbsp;
-                    <i className="text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-blue-500 dark:from-pink-400 dark:to-pink-700 not-italic">
+                    <i className="text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-blue-500 dark:from-pink-400 dark:to-pink-600 not-italic">
                         Matthew
                     </i>
                 </WelcomeTitle>
