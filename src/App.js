@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import Toggle from "./components/Toggle";
-import Footer from "./components/Footer.js";
-import FooterText from "./components/FooterText";
-import { motion } from "framer-motion";
-import { UnderConstruction } from "./components/UnderConstruction";
-import { Emphasize } from "./components/Emphasize";
-import { Body } from "./components/Body";
-import { Section } from "./components/Section";
-import { LandingContainer } from "./components/LandingContainer";
-import { TitleContainer } from "./components/TitleContainer";
-import { Heading } from "./components/Heading";
-import { BoldHeading } from "./components/BoldHeading";
-import { Subtitle } from "./components/Subtitle";
-import { ButtonContainer } from "./components/ButtonContainer";
-import { Button } from "./components/Button";
-import { DividerLine } from "./components/DividerLine";
+import React, { useState } from 'react';
+import Toggle from './components/Toggle';
+import Footer from './components/Footer.js';
+import FooterText from './components/FooterText';
+import { motion } from 'framer-motion';
+import { UnderConstruction } from './components/UnderConstruction';
+import { Emphasize } from './components/Emphasize';
+import { Body } from './components/Body';
+import { Section } from './components/Section';
+import { LandingContainer } from './components/LandingContainer';
+import { TitleContainer } from './components/TitleContainer';
+import { Heading } from './components/Heading';
+import { BoldHeading } from './components/BoldHeading';
+import { Subtitle } from './components/Subtitle';
+import { ButtonContainer } from './components/ButtonContainer';
+import { Button } from './components/Button';
+import { DividerLine } from './components/DividerLine';
 
 // import Contact from './components/Contact/Contact';
 // import { ReactComponent as TriangleDivider } from "./img/triangle-divider.svg";
@@ -31,17 +31,17 @@ function App() {
     }
 
     const splitToLetters = (name) => {
-        return name.split("").map((letter) => (
+        return name.split('').map((letter, i) => (
             <motion.span
                 className="inline-block transform duration-75 hover:brightness-125"
                 transition={{
                     duration: 0.1,
-                    type: "spring",
+                    type: 'spring',
                     stiffness: 400,
-                    damping: 10,
+                    damping: 10
                 }}
                 whileHover={{ scale: 1.2 }}
-                key={letter + name.indexOf(letter)}
+                key={letter + i}
             >
                 {letter}
             </motion.span>
@@ -49,7 +49,7 @@ function App() {
     };
 
     return (
-        <div className={dark ? "dark" : ""}>
+        <div className={dark ? 'dark' : ''}>
             <Toggle toggle={toggleTheme} dark={dark} />
             <Body>
                 <Section section="Landing">
@@ -60,9 +60,9 @@ function App() {
                         <DividerLine />
                         <TitleContainer>
                             <Heading>
-                                Hi, I'm{" "}
+                                Hi, I'm{' '}
                                 <BoldHeading>
-                                    {splitToLetters("Matthew")}
+                                    {splitToLetters('Matthew')}
                                 </BoldHeading>
                             </Heading>
                             <Subtitle>a full stack web developer.</Subtitle>
@@ -84,7 +84,7 @@ function App() {
                             href="https://www.github.com/arthurmatthew/matthewarthur"
                             target="blank"
                         >
-                            View the GitHub repository{" "}
+                            View the GitHub repository{' '}
                             <Emphasize>here</Emphasize>.
                         </a>
                     </FooterText>

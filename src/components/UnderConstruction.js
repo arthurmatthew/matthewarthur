@@ -1,10 +1,15 @@
-import React from "react";
+import React from 'react';
+import { motion } from 'framer-motion';
 
 export function UnderConstruction() {
     return (
-        <div className="flex w-full items-center justify-center p-12">
+        <motion.div
+            className="flex w-full items-center justify-center p-12"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+        >
             <div className="rounded-md bg-white p-6">
-                This website is under construction. See its progress{" "}
+                This website is under construction. See its progress{' '}
                 <a
                     href="https://www.github.com/arthurmatthew/matthewarthur"
                     target="blank"
@@ -14,6 +19,6 @@ export function UnderConstruction() {
                 </a>
                 .
             </div>
-        </div>
+        </motion.div>
     );
 }
