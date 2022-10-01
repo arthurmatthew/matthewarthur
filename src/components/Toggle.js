@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 function Toggle(props) {
     return (
@@ -11,7 +11,7 @@ function Toggle(props) {
             <div className="flex h-8 w-8 items-center justify-center rounded-2xl bg-stone-900 duration-500 dark:bg-stone-200">
                 <i
                     className={`${
-                        props.dark ? "bi-sun text-xl" : "bi-moon-stars text-lg"
+                        props.dark ? 'bi-sun text-xl' : 'bi-moon-stars text-lg'
                     } ${
                         props.icon
                     } flex items-center justify-center text-white dark:text-black`}
