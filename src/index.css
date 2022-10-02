@@ -1,45 +1,45 @@
-@import url("https://fonts.googleapis.com/css?family=Inter+Tight:100,200,400,600,900");
+@import url('https://fonts.googleapis.com/css?family=Inter+Tight:100,200,400,600,900');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 ::selection {
-    color: white;
-    background-color: black;
+  color: white;
+  background-color: black;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    border: 0;
-    outline: 0;
-    padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
 
-    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI",
-        "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .paragraph-1 {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 .triangle-div-width {
-    width: calc(100% + 1.3px);
+  width: calc(100% + 1.3px);
 }
 
 .no-scrollbar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .no-scrollbar {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
