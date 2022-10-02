@@ -7,7 +7,7 @@ import { UnderConstruction } from './components/UnderConstruction';
 import { Emphasize } from './components/Emphasize';
 import { Body } from './components/Body';
 import { Section } from './components/Section';
-import { LandingContainer } from './components/LandingContainer';
+import { HeroContainer } from './components/HeroContainer';
 import { TitleContainer } from './components/TitleContainer';
 import { Heading } from './components/Heading';
 import { BoldHeading } from './components/BoldHeading';
@@ -16,7 +16,6 @@ import { ButtonContainer } from './components/ButtonContainer';
 import { Button } from './components/Button';
 import { DividerLine } from './components/DividerLine';
 
-// import Contact from './components/Contact/Contact';
 // import { ReactComponent as TriangleDivider } from "./assets/triangle-divider.svg";
 
 function App() {
@@ -52,11 +51,11 @@ function App() {
     <div className={dark ? 'dark' : ''}>
       <Toggle toggle={toggleTheme} dark={dark} />
       <Body>
-        <Section section="Landing">
+        <Section section="Hero">
           {/* <SvgContainer>
                         <TriangleDivider className="relative block triangle-div-width h-[78px] dark:fill-stone-800 fill-stone-100 duration-150" />
                     </SvgContainer> */}
-          <LandingContainer>
+          <HeroContainer>
             <DividerLine />
             <TitleContainer>
               <Heading>
@@ -69,7 +68,7 @@ function App() {
               <Button>About</Button>
               <Button>My Projects</Button>
             </ButtonContainer>
-          </LandingContainer>
+          </HeroContainer>
         </Section>
         <UnderConstruction />
         <Footer>
