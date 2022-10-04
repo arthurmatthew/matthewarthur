@@ -2,7 +2,11 @@ import React from 'react';
 
 export function Section(props) {
   return (
-    <div className="justify-evely relative flex h-screen w-full">
+    <div
+      className={`relative flex flex-col ${
+        props.full ? 'h-screen' : ''
+      } w-full`}
+    >
       {props.children}
     </div>
   );

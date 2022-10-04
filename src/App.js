@@ -15,6 +15,28 @@ import { Subtitle } from './components/Subtitle';
 import { ButtonContainer } from './components/ButtonContainer';
 import { Button } from './components/Button';
 import { DividerLine } from './components/DividerLine';
+import { Paragraph } from './components/Paragraph';
+
+function Item(props) {
+  return <li className="list-inside list-disc">{props.children}</li>;
+}
+
+function List(props) {
+  return (
+    <div>
+      <h2 className="text-xl font-black tracking-tighter text-black dark:text-white">
+        {props.name}
+      </h2>
+      <ul className="max-w-3xl text-2xl font-extralight tracking-tighter text-black dark:text-white">
+        <Item>HTML</Item>
+        <Item>CSS</Item>
+        <Item>JavaScript</Item>
+        <Item>React</Item>
+        <Item>TailwindCSS</Item>
+      </ul>
+    </div>
+  );
+}
 
 // import { ReactComponent as TriangleDivider } from "./assets/triangle-divider.svg";
 
@@ -51,7 +73,7 @@ function App() {
     <div className={dark ? 'dark' : ''}>
       <Toggle toggle={toggleTheme} dark={dark} />
       <Body>
-        <Section section="Hero">
+        <Section section="Hero" full={true}>
           {/* <SvgContainer>
                         <TriangleDivider className="relative block triangle-div-width h-[78px] dark:fill-stone-800 fill-stone-100 duration-150" />
                     </SvgContainer> */}
@@ -69,6 +91,69 @@ function App() {
               <Button>My Projects</Button>
             </ButtonContainer>
           </HeroContainer>
+        </Section>
+        <Section section="About">
+          <div className="flex flex-col gap-2">
+            <Heading>About Me</Heading>
+            <DividerLine />
+            <Paragraph>
+              Hey, I'm Matthew. I'm a full-stack web developer from the United
+              States.
+            </Paragraph>
+            <Paragraph>
+              I love technology. Mostly, I'm fascinated with websites. Every
+              time I see a cool animation or design on a website, or an
+              interesting back-end behavior, I have an unbeatable urge to open
+              the developer console. I strive to create the best designs and
+              experiences I can, taking in everything I see around the web.
+            </Paragraph>
+          </div>
+        </Section>
+        <Section section="Technologies">
+          <div className="pt-12">&nbsp;</div>
+          <div className="flex flex-col gap-2">
+            <Heading>My Technologies</Heading>
+            <DividerLine />
+            <Paragraph>
+              Here are some of the technologies & programming languages I work
+              with.
+            </Paragraph>
+            <List name="Front-End"></List>
+            <div>
+              <h2 className="text-xl font-black tracking-tighter text-black dark:text-white">
+                Back-End
+              </h2>
+              <ul className="max-w-3xl text-2xl font-extralight tracking-tighter text-black dark:text-white">
+                <li className="list-inside list-disc">Node.js</li>
+                <li className="list-inside list-disc">Express.js</li>
+                <li className="list-inside list-disc">MongoDB</li>
+                <li className="list-inside list-disc">Firebase</li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="text-xl font-black tracking-tighter text-black dark:text-white">
+                Tools
+              </h2>
+              <ul className="max-w-3xl text-2xl font-extralight tracking-tighter text-black dark:text-white">
+                <li className="list-inside list-disc">Visual Studio Code</li>
+                <li className="list-inside list-disc">Git</li>
+                <li className="list-inside list-disc">Stack Overflow</li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="text-xl font-black tracking-tighter text-black dark:text-white">
+                Other
+              </h2>
+              <ul className="max-w-3xl text-2xl font-extralight tracking-tighter text-black opacity-20 dark:text-white">
+                <li className="list-inside list-disc">C#</li>
+                <li className="list-inside list-disc">VB.NET</li>
+                <li className="list-inside list-disc">Python</li>
+                <li className="list-inside list-disc">Java</li>
+                <li className="list-inside list-disc">Lua</li>
+                <li className="list-inside list-disc">Unity Game Engine</li>
+              </ul>
+            </div>
+          </div>
         </Section>
         <UnderConstruction />
         <Footer>

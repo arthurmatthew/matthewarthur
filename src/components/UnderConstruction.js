@@ -7,6 +7,7 @@ export function UnderConstruction() {
       className="flex w-full items-center justify-center p-12"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     >
       <div className="rounded-md bg-white p-6">
         This website is under construction. See its progress{' '}
