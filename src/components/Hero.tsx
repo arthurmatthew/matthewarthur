@@ -2,12 +2,14 @@ import { ReactNode } from 'react';
 
 export default function Hero() {
   return (
-    <section className="flex h-screen w-screen items-center justify-center">
+    <section className="flex h-screen w-screen items-center justify-center  dark:bg-stone-900">
       <div className="flex w-full flex-col gap-4 px-64">
-        <h1 className="serif text-9xl italic tracking-tighter">Welcome.</h1>
-        <hr className="h-0.5 border-none bg-black opacity-5" />
+        <h1 className="serif text-9xl italic tracking-tighter dark:text-white">
+          Welcome.
+        </h1>
+        <hr className="h-0.5 border-none bg-stone-200 dark:bg-stone-800" />
         <article>
-          <p className="sans-serif w-3/4 text-xl">
+          <p className="sans-serif w-3/4 text-xl dark:text-white">
             <em className="font-bold not-italic">I'm Matthew</em>. I'm a
             full-stack web developer. I work with a variety of technologies. My
             favorite language is{' '}
