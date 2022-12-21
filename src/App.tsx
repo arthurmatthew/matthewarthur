@@ -9,11 +9,19 @@ function App() {
 
   return (
     <div className={`${dark ? 'dark ' : ''}overflow-x-hidden`} id="main">
+      <Hero />
+      <Aside dark={dark} setDark={setDark} />
+    </div>
+  );
+}
+
+function Aside({ dark, setDark }: { dark: boolean; setDark: Function }) {
+  return (
+    <>
       <Header />
       <Sidebar dark={dark} setDark={setDark} />
-      <Hero />
       <Footer />
-    </div>
+    </>
   );
 }
 
