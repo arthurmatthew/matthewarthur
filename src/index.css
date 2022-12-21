@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Inter+Tight:100,200,400,600,900');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:100,200,400,600,900');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-::selection {
-  color: white;
-  background-color: black;
-}
 
 html {
   scroll-behavior: smooth;
@@ -25,16 +21,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.paragraph-1 {
-  max-width: 800px;
+.sans-serif {
+  font-family: 'Inter Tight';
+}
+
+.serif {
+  font-family: 'Playfair Display';
 }
 
 .bg-grid {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
-}
-
-.triangle-div-width {
-  width: calc(100% + 1.3px);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgba(0, 0, 0, 0.03)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -46,4 +42,17 @@ body {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+}
+
+.fade-in {
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

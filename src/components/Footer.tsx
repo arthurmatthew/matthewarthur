@@ -1,11 +1,18 @@
-interface Children {
-  children?: React.ReactNode;
-}
-
-export function Footer(props: Children) {
+export default function Footer() {
   return (
-    <div className="flex w-full items-center justify-center p-4 duration-150">
-      {props.children}
-    </div>
+    <footer className="flex h-24 w-screen flex-col items-center justify-center gap-1 border-t-2 border-stone-100 py-4 pl-24">
+      <p className="bg-yellow-200">This website is under construction.</p>
+      <p>
+        This website was made with React and TailwindCSS by Matthew Arthur. See
+        the code{' '}
+        <a
+          target="_blank"
+          href="https://www.github.com/arthurmatthew"
+          className="underline"
+        >
+          here
+        </a>
+      </p>
+    </footer>
   );
 }
