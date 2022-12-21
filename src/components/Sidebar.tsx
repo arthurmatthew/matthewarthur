@@ -14,7 +14,7 @@ export default function Sidebar({
   };
 
   return (
-    <aside className="fixed top-0 left-0 flex h-screen w-24 flex-col items-center justify-center gap-4 border-r-2 border-stone-100 px-4">
+    <aside className="fixed top-0 left-0 flex h-screen w-24 flex-col items-center justify-center gap-4 border-r-2 border-stone-200 px-4">
       <section className="flex flex-col gap-4 text-black">
         <Icon className="arrow-bar-up" href="#main" target="_self" />
         <Icon

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className={`${dark ? 'dark ' : ''}overflow-x-hidden`} id="main">
-      <Navbar />
+      <Header />
       <Sidebar dark={dark} setDark={setDark} />
       <Hero />
       <Footer />
