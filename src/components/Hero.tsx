@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import Blob from '../assets/blob.svg';
 
 export default function Hero() {
   return (
