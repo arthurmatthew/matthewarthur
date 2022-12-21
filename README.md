@@ -10,13 +10,17 @@
   </a>
 </p>
 
+## Important ⚠
+
+**This website is not finished!**
+
 ## About 💁‍♂️
 
 This is my personal website, used to showcase my web development ability. I will try to update it as I learn new things.
 
 ## Contribute 💕
 
-Contributions are welcome! Go ahead and fork the repository and make your changes properly. Then, submit a pull request and wait for a review.
+Contributions are welcome! Go ahead and fork the repository and make your changes properly. Then, submit a pull request and wait for a review. **Or, if you have feedback or a bug report submit an issue.**
 
 ## Local Installation 💻
 
