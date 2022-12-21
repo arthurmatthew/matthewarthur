@@ -44,15 +44,18 @@ body {
   /* Firefox */
 }
 
-.fade-in {
-  animation: fadein 0.5s;
+section,
+footer,
+hr {
+  transition: background-color 1s ease-in-out;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+footer,
+header,
+aside {
+  transition: border-color 1s ease-in-out;
+}
+
+* {
+  transition: color 0.5s ease-in-out;
 }
