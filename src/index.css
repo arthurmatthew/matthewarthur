@@ -75,13 +75,14 @@ hr {
 section,
 footer,
 hr {
-  transition: background-color 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 footer,
 header,
 aside {
-  transition: border-color 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  transition-property: border-color, background-color;
 }
 
 h1,
