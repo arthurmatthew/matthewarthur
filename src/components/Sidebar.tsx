@@ -51,7 +51,7 @@ const Icon = ({
       onClick={() => (onClick !== undefined ? onClick() : '')}
     >
       <i
-        className={`bi bi-${className} text-3xl opacity-50 hover:opacity-100`}
+        className={`bi bi-${className} text-3xl opacity-50 hover:text-pink-500 hover:opacity-100`}
       ></i>
     </a>
   );
