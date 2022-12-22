@@ -1,3 +1,6 @@
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/89240346/209046743-466eccb9-d3de-48ad-8a28-76f2e956e43b.png" width="200" height="200">
+</div>
 <h1 align="center">
   matthewarthur.dev
 </h1>
