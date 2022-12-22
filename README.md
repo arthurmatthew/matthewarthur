@@ -8,7 +8,6 @@
   My personal website built with React + TailwindCSS and deployed on Netlify
 </p>
 <p align="center">
-  <a href="https://app.netlify.com/sites/matthewarthur/deploys" target="_blank">
   <img src="https://img.shields.io/netlify/e9a76d14-32d3-433e-8593-3d463d5ddcc0" alt="Netlify Status">
   <img src="https://img.shields.io/github/issues/arthurmatthew/matthewarthur" alt="Open Issues">
   <img src="https://img.shields.io/github/license/arthurmatthew/matthewarthur" alt="License">
