@@ -60,6 +60,18 @@ hr {
   width: 100vw;
 }
 
+@media (max-width: 1024px) {
+  .section {
+    padding: 0 7rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 0 2rem;
+  }
+}
+
 section,
 footer,
 hr {

@@ -17,6 +17,20 @@
   padding: 0 1rem;
 }
 
+@media (max-width: 1024px) {
+  #sidebar {
+    width: 4rem;
+    padding: 0 0.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  #sidebar {
+    display: none;
+    /* TODO: Move sidebar to a menu. */
+  }
+}
+
 #sidebar section {
   display: flex;
   flex-direction: column;

@@ -4,7 +4,7 @@ import Underline from './Underline';
 export default function Hero() {
   return (
     <section id="hero" className="section dark:bg-stone-900">
-      <h1 className="text-9xl dark:text-white">
+      <h1 className="text-7xl dark:text-white md:text-9xl">
         {'Welcome.'.split('').map((x) => (
           <span className="duration-75 hover:pr-2 hover:text-pink-500">
             {x}

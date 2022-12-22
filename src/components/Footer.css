@@ -13,3 +13,15 @@ footer {
   padding: 1rem 0;
   padding-left: 6rem;
 }
+
+@media (max-width: 1024px) {
+  footer {
+    height: 4rem;
+  }
+}
+
+@media (max-width: 640px) {
+  footer {
+    padding-left: 0;
+  }
+}
