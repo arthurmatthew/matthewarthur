@@ -21,12 +21,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.sans-serif {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display';
+}
+
+p {
   font-family: 'Inter Tight';
 }
 
-.serif {
-  font-family: 'Playfair Display';
+hr {
+  height: 2px;
+  border: none;
 }
 
 .bg-grid {
@@ -44,6 +54,12 @@ body {
   /* Firefox */
 }
 
+.section {
+  padding: 0 14rem;
+  height: 100vh;
+  width: 100vw;
+}
+
 section,
 footer,
 hr {
@@ -56,6 +72,9 @@ aside {
   transition: border-color 1s ease-in-out;
 }
 
-* {
+h1,
+p,
+i,
+ul {
   transition: color 0.5s ease-in-out;
 }

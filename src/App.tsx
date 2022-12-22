@@ -1,11 +1,19 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
-import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 
 function App() {
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useState(false);
+
+  useEffect(() => {
+    let data = window.sessionStorage.getItem('dark');
+    setDark(data != null ? JSON.parse(data) : false);
+  }, []);
+
+  useEffect(() => {
+    window.sessionStorage.setItem('dark', JSON.stringify(dark));
+  }, [dark]);
 
   return (
     <div className={`${dark ? 'dark ' : ''}overflow-x-hidden`} id="main">
@@ -18,7 +26,6 @@ function App() {
 function Aside({ dark, setDark }: { dark: boolean; setDark: Function }) {
   return (
     <>
-      <Header />
       <Sidebar dark={dark} setDark={setDark} />
       <Footer />
     </>

@@ -1,0 +1,15 @@
+#hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#hero h1 {
+  font-style: italic;
+  letter-spacing: -0.05em;
+}
+
+#hero article {
+  width: 75%;
+}

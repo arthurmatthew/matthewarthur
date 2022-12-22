@@ -4,8 +4,6 @@ import './index.css';
 import App from './App';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// TODO add back strict mode, just gone so useEffect doesn't run twice
+
+createRoot(document.getElementById('root')!).render(<App />);
