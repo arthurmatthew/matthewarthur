@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Sidebar from './components/Sidebar';
+import Footer from './components/Footer/Footer';
+import Hero from './components/Hero/Hero';
+import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   const [dark, setDark] = useState(false);

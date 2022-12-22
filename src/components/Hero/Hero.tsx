@@ -1,5 +1,5 @@
 import './Hero.css';
-import Underline from './Underline';
+import Underline from '../Underline/Underline';
 
 export default function Hero() {
   return (
