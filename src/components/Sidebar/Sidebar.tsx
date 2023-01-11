@@ -1,4 +1,4 @@
-import { createRef, useState } from 'react';
+import { useState } from 'react';
 import './Sidebar.css';
 
 export default function Sidebar({
