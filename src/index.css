@@ -21,19 +21,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Playfair Display';
-}
-
-p {
-  font-family: 'Inter Tight';
-}
-
 hr {
   height: 2px;
   border: none;
