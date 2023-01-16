@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
+import Projects from './components/Projects/Projects';
 import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className={`${dark ? 'dark ' : ''}overflow-x-hidden`} id="main">
       <Hero />
+      <Projects />
       <Aside dark={dark} setDark={setDark} />
     </div>
   );
