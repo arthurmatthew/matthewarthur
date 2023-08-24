@@ -1,0 +1,13 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#projects h1 {
+  letter-spacing: -0.05em;
+}
+
+#projects article {
+  width: 75%;
+}
