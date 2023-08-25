@@ -1,3 +1,5 @@
+# ⚠ Please refer to an older commit to view the previous website edition. 
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
