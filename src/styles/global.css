@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter Tight", "sans-serif";
+  --font-display: "Libre Barcode 128 Text", system-ui;
+}
