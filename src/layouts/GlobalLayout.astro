@@ -9,9 +9,26 @@ import "../styles/global.css";
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Matthew Arthur</title>
+    <title>Matthew Arthur - Web Developer</title>
+    <meta
+      name="description"
+      content="Matthew Arthur is a web developer and musician from Seattle."
+    />
   </head>
   <body>
     <slot />
   </body>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Matthew Arthur",
+      "url": "https://matthewarthur.dev",
+      "jobTitle": "Web Developer",
+      "sameAs": [
+        "https://www.linkedin.com/in/matthew-arthur-6889ba395/",
+        "https://github.com/arthurmatthew"
+      ]
+    }
+  </script>
 </html>
