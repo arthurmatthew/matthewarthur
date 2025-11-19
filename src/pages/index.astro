@@ -3,26 +3,101 @@ import GlobalLayout from "../layouts/GlobalLayout.astro";
 ---
 
 <GlobalLayout>
-  <header class="mx-auto max-w-6xl flex my-20 items-center flex-col">
-    <h1 class="font-display text-7xl sm:text-9xl">matthew arthur</h1>
-  </header>
-  <main class="mx-auto max-w-6xl text-2xl px-8">
-    <p>
-      I'm a passionate web developer and musician from Seattle. I've been
-      designing websites independently since 2022, and I'm looking to build
-      experience working with a team of developers. This website is largely
-      under construction. Check back soon!
-    </p>
-    <ul class="underline mt-6">
-      <li><a href="https://www.github.com/arthurmatthew">My GitHub</a></li>
-      <li>
-        <a href="https://www.linkedin.com/in/matthew-arthur-6889ba395/"
-          >My LinkedIn</a
-        >
-      </li>
-    </ul>
+  <nav class="mx-auto max-w-3xl mt-40">
+    <div class="flex justify-between text-2xl text-emerald-700">
+      <h1 class="font-semibold">Matthew Arthur</h1>
+      <ul class="flex gap-2">
+        <li>
+          <a target="_blank" href="https://www.github.com/arthurmatthew"
+            ><i class="bi bi-github"></i></a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/matthew-arthur-6889ba395/"
+            ><i class="bi bi-linkedin"></i></a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main class="mx-auto max-w-3xl mt-10">
+    <div class="flex flex-col gap-5 text-xl">
+      <p>I'm a passionate web developer from Seattle.</p>
+      <p>
+        I develop full-stack, user-facing experiences with a focus on the
+        intersection of design and functionality. I've created impactful
+        applications that target my favorite communities and interests.
+      </p>
+      <p>
+        In my free time, I continue to design with sound and emotion. I
+        digitally compose music, tweak synths, engineer artists, and master
+        rough mixes. Of course, I play a few instruments and write songs without
+        my computer, too.
+      </p>
+    </div>
   </main>
+  <section class="mx-auto max-w-3xl mt-10">
+    <h1 class="font-semibold text-emerald-700 text-2xl">Projects</h1>
+    <div
+      class="mt-10 grid gap-2 grid-rows-2 md:grid-rows-1 md:grid-cols-2 text-xl"
+    >
+      <div class="flex flex-col gap-2">
+        <a
+          target="_blank"
+          class="font-semibold text-purple-900"
+          href="https://useclicktrack.com"
+          ><span class="underline">Clicktrack</span>
+          <i class="bi bi-link"></i></a
+        >
+        <p>
+          Clicktrack is an advanced metronome app that I designed for musicians
+          like band directors or drummers who deal with dynamic tempo.
+        </p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <a
+          target="_blank"
+          class="font-semibold text-red-900"
+          href="https://bhsradio.com"
+          ><span class="underline">KBHS</span>
+          <i class="bi bi-link"></i></a
+        >
+        <p>
+          KBHS is a radio station I built for my high school. It runs on a
+          DigitalOcean VPS hosting internet radio software capable of
+          pre-recorded playback and livestreaming.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="max-w-3xl mt-10 mx-auto">
+    <h1 class="font-semibold text-emerald-700 text-2xl">Skills</h1>
+    <div class="flex flex-col gap-5 text-xl mt-10">
+      <p>
+        My main tools are <b>TypeScript</b>, <b>React</b>, and <b>Tailwind</b>.
+        I use frameworks like <b>Vike</b> or <b>Next.js</b> to render and distribute
+        my frontends. I combine various authentication and storage providers like
+        <b>AWS</b> or
+        <b>Google Cloud</b> to create functional and secure backends.
+      </p>
+      <p>
+        I'm able to apply my general networking experience to understand common
+        patterns, allowing me to create powerful services even if I'm not
+        familiar with a specific technology. My strong web design foundations
+        help me learn frameworks quickly, allowing me to explore beyond React.
+      </p>
+      <p>
+        I've always been interested in trying many technologies, despite
+        settling into web design. In the past, I built personal experience with <b
+          >Python</b
+        >, <b>VB.NET</b>, and <b>C#</b>. Outside of building functional
+        applications, I'm learning low-level programming principles.
+      </p>
+    </div>
+  </section>
   <footer class="flex justify-center my-20">
-    <p class="opacity-50">Updated 11/9/2025</p>
+    <p class="opacity-50">Updated 11/18/2025</p>
   </footer>
 </GlobalLayout>

@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "matthew",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@fontsource-variable/inter-tight": "^5.2.7",
-    "@fontsource/libre-barcode-128-text": "^5.2.8",
     "@tailwindcss/vite": "^4.1.17",
     "astro": "^5.15.4",
+    "bootstrap-icons": "^1.13.1",
     "tailwindcss": "^4.1.17"
   }
 }
